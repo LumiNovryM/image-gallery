@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body{
+    background: #ccc;
+    text-align: center;
+}
+
+.container{
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid white;
+    overflow: auto;
+}
+
+.thumb{
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+    transition: 0.3s all ease-in-out;
+}
+
+.thumb:hover{
+    opacity: 0.5;
+    cursor: pointer ;
+}
+
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade{
+    opacity: 0;
+    animation: fade 0.5s forwards;
+}
+
+.active{
+    opacity: 0.5;
+}
